@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reisen, Kultur & Klima</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#1a2421',
+                            card: '#24302c',
+                            accent: '#4a7c59',
+                            light: '#eef2ee',
+                            muted: '#94a3b8',
+                            warm: '#d97706'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121816;
+            color: #eef2ee;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- Hero Header -->
+    <header class="relative min-h-[60vh] flex items-center justify-center text-center px-4 py-20 bg-gradient-to-b from-brand-dark to-[#121816] border-b border-emerald-900/30">
+        <div class="max-w-3xl mx-auto space-y-6">
+            <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-widest text-emerald-400 bg-emerald-950/80 rounded-full border border-emerald-800/50">
+                Persönliche Perspektiven
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white">
+                Reisen, Kultur & Klima
+            </h1>
+            <p class="text-lg sm:text-xl text-stone-300 font-light leading-relaxed max-w-2xl mx-auto">
+                Wie wir die Welt entdecken, andere Kulturen verstehen und gleichzeitig Verantwortung für unsere Umwelt tragen.
+            </p>
+        </div>
+    </header>
+
+    <!-- Einführender Abschnitt -->
+    <section class="max-w-4xl mx-auto px-6 py-16 text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-emerald-400">
+            Der Ausgleich: Horizonterweiterung & Ökologische Verantwortung
+        </h2>
+        <div class="space-y-4 text-stone-300 leading-relaxed text-base sm:text-lg">
+            <p>
+                Reisen öffnet uns die Augen. Wenn wir fremde Länder besuchen, lernen wir neue Lebensweisen kennen, verstehen andere Menschen besser und schätzen die Vielfalt unserer Erde.
+            </p>
+            <p>
+                Gleichzeitig hinterlässt jede Reise Spuren. Besonders Flüge belasten das Klima und gefährden genau die Natur, die wir bewundern wollen. Es geht nicht darum, gar nicht mehr zu reisen – sondern bewusster zu handeln.
+            </p>
+        </div>
+    </section>
+
+    <!-- Bilder-Galerie & Gedanken -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Bild 1: Flugzeug Hongkong -->
+            <article class="bg-brand-card rounded-2xl overflow-hidden shadow-xl border border-stone-800/80 hover:border-emerald-700/50 transition-all duration-300 flex flex-col">
+                <div class="relative h-64 overflow-hidden bg-stone-900">
+                    <img src="1000119723.jpg" alt="Flugzeug beim Ausflug aus Hongkong" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-medium text-emerald-400 uppercase tracking-wider mb-2 block">
+                        📍 Hongkong | Flug über die Stadt
+                    </span>
+                    <h3 class="text-xl font-bold text-white mb-3">Die Last der Weite</h3>
+                    <p class="text-stone-300 text-sm leading-relaxed flex-grow">
+                        Fliegen bringt uns in wenige Stunden an ans Ende der Welt. Doch Flugzeug-Emissionen sind ein Haupttreiber des Klimawandels. Wir müssen uns bei jeder Fernreise fragen: Ist sie diesen ökologischen Preis wert?
+                    </p>
+                </div>
+            </article>
+
+            <!-- Bild 2: Großer Panda -->
+            <article class="bg-brand-card rounded-2xl overflow-hidden shadow-xl border border-stone-800/80 hover:border-emerald-700/50 transition-all duration-300 flex flex-col">
+                <div class="relative h-64 overflow-hidden bg-stone-900">
+                    <img src="_DSC0315.JPG" alt="Großer Panda auf einem Baum" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-medium text-emerald-400 uppercase tracking-wider mb-2 block">
+                        📍 Chengdu Panda Base, China
+                    </span>
+                    <h3 class="text-xl font-bold text-white mb-3">Schutz wertvoller Arten</h3>
+                    <p class="text-stone-300 text-sm leading-relaxed flex-grow">
+                        Der Große Panda steht weltweit als Symbol für Artenschutz. Klimaveränderungen zerstören natürliche Lebensräume. Schutzprojekte zeigen uns, wie wichtig der Erhalt der Wildnis ist.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Bild 3: Roter Panda -->
+            <article class="bg-brand-card rounded-2xl overflow-hidden shadow-xl border border-stone-800/80 hover:border-emerald-700/50 transition-all duration-300 flex flex-col">
+                <div class="relative h-64 overflow-hidden bg-stone-900">
+                    <img src="_DSC0227.JPG" alt="Roter Panda im Baum" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-medium text-emerald-400 uppercase tracking-wider mb-2 block">
+                        📍 Chengdu Panda Base, China
+                    </span>
+                    <h3 class="text-xl font-bold text-white mb-3">Bedrohte Biodiversität</h3>
+                    <p class="text-stone-300 text-sm leading-relaxed flex-grow">
+                        Der seltene Rote Panda versteckt sich im dichten Grün. Wenn Wälder roden werden und Temperaturen steigen, verlieren solche Tiere ihre Heimat auf ewig.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Bild 4: Panda Babys -->
+            <article class="bg-brand-card rounded-2xl overflow-hidden shadow-xl border border-stone-800/80 hover:border-emerald-700/50 transition-all duration-300 flex flex-col">
+                <div class="relative h-64 overflow-hidden bg-stone-900">
+                    <img src="_DSC0162.JPG" alt="Panda-Babys auf einem Baum" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-medium text-emerald-400 uppercase tracking-wider mb-2 block">
+                        📍 Chengdu Panda Base, China
+                    </span>
+                    <h3 class="text-xl font-bold text-white mb-3">Verantwortung für die Zukunft</h3>
+                    <p class="text-stone-300 text-sm leading-relaxed flex-grow">
+                        Junge Tiere erinnern uns daran, dass wir die Welt für nachfolgende Generationen bewahren müssen. Unser jetziges Handeln entscheidet über ihre Zukunft.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Bild 5: Seerose & Biene -->
+            <article class="bg-brand-card rounded-2xl overflow-hidden shadow-xl border border-stone-800/80 hover:border-emerald-700/50 transition-all duration-300 flex flex-col">
+                <div class="relative h-64 overflow-hidden bg-stone-900">
+                    <img src="DSCF8630.JPG" alt="Seerose mit Biene" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-medium text-emerald-400 uppercase tracking-wider mb-2 block">
+                        📍 Botanisches Wunder
+                    </span>
+                    <h3 class="text-xl font-bold text-white mb-3">Fragile Ökosysteme</h3>
+                    <p class="text-stone-300 text-sm leading-relaxed flex-grow">
+                        Eine kleine Biene auf einer Blüte: Das Ökosystem funktioniert nur im Zusammenspiel vieler kleiner Wunder. Schon geringe Klimaveränderungen stören dieses empfindliche Gleichgewicht.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Bild 6: Tempel Delhi -->
+            <article class="bg-brand-card rounded-2xl overflow-hidden shadow-xl border border-stone-800/80 hover:border-emerald-700/50 transition-all duration-300 flex flex-col">
+                <div class="relative h-64 overflow-hidden bg-stone-900">
+                    <img src="1000121310.jpg" alt="Tempel/Bauwerk in Delhi aus Bogenperspektive" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-medium text-emerald-400 uppercase tracking-wider mb-2 block">
+                        📍 Delhi, Indien | Isa Khan Tumba
+                    </span>
+                    <h3 class="text-xl font-bold text-white mb-3">Neue Perspektiven</h3>
+                    <p class="text-stone-300 text-sm leading-relaxed flex-grow">
+                        Historische Orte zeigen uns die reiche Geschichte anderer Völker. Wer fremde Kulturen vor Ort erlebt, lernt Respekt, Offenheit und echtes globales Verständnis.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Bild 7: Kanal Bangkok -->
+            <article class="bg-brand-card rounded-2xl overflow-hidden shadow-xl border border-stone-800/80 hover:border-emerald-700/50 transition-all duration-300 flex flex-col">
+                <div class="relative h-64 overflow-hidden bg-stone-900">
+                    <img src="1000121313.jpg" alt="Kanal in Bangkok" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-medium text-emerald-400 uppercase tracking-wider mb-2 block">
+                        📍 Bangkok, Thailand | Kanäle (Khlongs)
+                    </span>
+                    <h3 class="text-xl font-bold text-white mb-3">Alltag an fremden Orten</h3>
+                    <p class="text-stone-300 text-sm leading-relaxed flex-grow">
+                        Abseits der Touristenpfade zeigt sich das echte Leben. Das Verständnis für einfache Lebensweisen stärkt unser Bewusstsein für die weltweiten Auswirkungen des Klimawandels.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Bild 8: Bananen Markt Bangkok -->
+            <article class="bg-brand-card rounded-2xl overflow-hidden shadow-xl border border-stone-800/80 hover:border-emerald-700/50 transition-all duration-300 flex flex-col">
+                <div class="relative h-64 overflow-hidden bg-stone-900">
+                    <img src="1000121174.jpg" alt="Bananen auf Marktstand in Bangkok" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-medium text-emerald-400 uppercase tracking-wider mb-2 block">
+                        📍 Bangkok, Thailand | Marktstand
+                    </span>
+                    <h3 class="text-xl font-bold text-white mb-3">Lokaler Konsum</h3>
+                    <p class="text-stone-300 text-sm leading-relaxed flex-grow">
+                        Frische Bananen direkt vom lokalen Stand: Wer auf Reisen regionale Produkte nutzt, unterstützt die Menschen vor Ort und spart unnötige Transporte.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Bild 9: Katze -->
+            <article class="bg-brand-card rounded-2xl overflow-hidden shadow-xl border border-stone-800/80 hover:border-emerald-700/50 transition-all duration-300 flex flex-col">
+                <div class="relative h-64 overflow-hidden bg-stone-900">
+                    <img src="1000118745.jpg" alt="Katze streckt sich auf Straßengrund" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-medium text-emerald-400 uppercase tracking-wider mb-2 block">
+                        📍 Im Alltag unterwegs
+                    </span>
+                    <h3 class="text-xl font-bold text-white mb-3">Die kleinen Begegnungen</h3>
+                    <p class="text-stone-300 text-sm leading-relaxed flex-grow">
+                        Eine Katze streckt sich entspannt auf den Pflastersteinen. Oft sind es genau diese kleinen, einfachen Augenblicke, die eine Reise unvergesslich machen.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Fazit Abschnitt -->
+    <section class="max-w-3xl mx-auto px-6 py-16 text-center">
+        <div class="bg-emerald-950/40 border border-emerald-800/40 rounded-2xl p-8 sm:p-10 space-y-4 shadow-lg">
+            <h2 class="text-2xl font-bold text-white">Fazit: Bewusster Reisen</h2>
+            <p class="text-stone-300 text-base sm:text-lg leading-relaxed">
+                Reisen bereichert unseren Geist und verbindet Kulturen. Wenn wir reisen, sollten wir dies mit Respekt, Dankbarkeit und Klimabewusstsein tun – seltener, aber dafür intensiver und nachhaltiger.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer mit explicit Urheberrechtshinweis -->
+    <footer class="bg-brand-dark border-t border-stone-800/80 py-10 px-4 text-center">
+        <div class="max-w-4xl mx-auto space-y-3">
+            <p class="text-stone-400 text-xs sm:text-sm leading-relaxed">
+                Alle Fotos stammen von mir (Niklas Karoli). Die Texte und Gedanken basieren auf meinen eigenen persönlichen Erfahrungen und Meinungen.
+            </p>
+            <p class="text-stone-500 text-xs">
+                Hosted via GitHub Pages
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
